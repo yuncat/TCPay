@@ -1,8 +1,5 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- */
 'use strict';
+
 import React, {
   AppRegistry,
   Component,
@@ -11,21 +8,14 @@ import React, {
   View
 } from 'react-native';
 
+// 注意: import时不要在最后加分号(;), 导入React库除外
+import Hello from './jscore/Hello'
+import TCListView from './jscore/TCListView.js'
+
 class TCPay extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
+      <TCListView />
     );
   }
 }
@@ -41,11 +31,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
   },
 });
 

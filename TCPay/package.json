@@ -8,6 +8,8 @@
     "postinstall": "npm run clean:babelrc"
   },
   "dependencies": {
-    "react-native": "^0.19.0"
+    "react-native": "^0.19.0",
+    "react-native-star-rating": "^1.0.3",
+    "react-native-starrating": "^1.0.0"
   }
 }
